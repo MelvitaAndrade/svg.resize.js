@@ -173,7 +173,7 @@ class ResizeHandler {
 extend(Element, {
   // Resize element with mouse
   resize: function (enabled = true) {
-    var resizeHandler = this.remember('_resizeHandler')
+    let resizeHandler = this.remember('_resizeHandler')
 
     if (!resizeHandler) {
       if (enabled.prototype instanceof ResizeHandler) {
