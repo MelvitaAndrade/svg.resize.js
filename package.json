@@ -22,7 +22,7 @@
   "files": [
     "/dist",
     "/src",
-    "/svg.select.js.d.ts"
+    "/svg.resize.js.d.ts"
   ],
   "typings": "./svg.resize.js.d.ts",
   "scripts": {
