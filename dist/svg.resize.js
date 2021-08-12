@@ -6,10 +6,9 @@
 * @copyright Ulrich-Matthias Schäfer
 * @license MIT
 *
-* BUILT: Thu Aug 12 2021 14:43:09 GMT+0530 (India Standard Time)
+* BUILT: Thu Aug 12 2021 14:49:15 GMT+0530 (India Standard Time)
 */;
-this.SVG = this.SVG || {};
-this.SVG.ResizeHandler = (function (exports, svg_js) {
+(function (svg_js) {
   'use strict';
 
   function _classCallCheck(instance, Constructor) {
@@ -230,6 +229,7 @@ this.SVG.ResizeHandler = (function (exports, svg_js) {
 
     return ResizeHandler;
   }();
+
   svg_js.extend(svg_js.Element, {
     // Resize element with mouse
     resize: function resize() {
@@ -253,12 +253,5 @@ this.SVG.ResizeHandler = (function (exports, svg_js) {
     }
   });
 
-  exports.ResizeHandler = ResizeHandler;
-  exports['default'] = ResizeHandler;
-
-  Object.defineProperty(exports, '__esModule', { value: true });
-
-  return exports;
-
-}({}, SVG));
+}(SVG));
 //# sourceMappingURL=svg.resize.js.map

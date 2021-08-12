@@ -7,3 +7,4 @@ rules:
   semi: 0
   quotes: off
   space-before-function-paren: 0
+  comma-dangle: 0

@@ -7,7 +7,7 @@ const getCoordsFromEvent = (ev) => {
   return { x: ev.clientX, y: ev.clientY };
 };
 
-export class ResizeHandler {
+class ResizeHandler {
   constructor(el) {
     this.el = el;
     this.lastCoordinates = null;
@@ -36,7 +36,7 @@ export class ResizeHandler {
         "b.resize",
         "l.resize",
         "rot.resize",
-        "shear.resize"
+        "shear.resize",
       ],
       this.handleResize
     );
@@ -123,7 +123,7 @@ export class ResizeHandler {
         shear: 0,
         eventType: this.eventType,
         event: e,
-        handler: this
+        handler: this,
       }).defaultPrevented
     ) {
       return;
@@ -152,7 +152,7 @@ export class ResizeHandler {
         shear: 0,
         eventType: this.eventType,
         event: e,
-        handler: this
+        handler: this,
       }).defaultPrevented
     ) {
       return;
@@ -180,7 +180,7 @@ export class ResizeHandler {
         shear: angle,
         eventType: this.eventType,
         event: e,
-        handler: this
+        handler: this,
       }).defaultPrevented
     ) {
       return;
@@ -225,7 +225,5 @@ extend(Element, {
     resizeHandler.active(enabled);
 
     return this;
-  }
+  },
 });
-
-export default ResizeHandler;
