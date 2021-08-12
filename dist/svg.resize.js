@@ -6,7 +6,7 @@
 * @copyright Ulrich-Matthias Schäfer
 * @license MIT
 *
-* BUILT: Thu Aug 12 2021 14:49:15 GMT+0530 (India Standard Time)
+* BUILT: Thu Aug 12 2021 14:55:11 GMT+0530 (India Standard Time)
 */;
 (function (svg_js) {
   'use strict';

@@ -51,20 +51,20 @@ const getBabelConfig = (targets, corejs = false) =>
 // We loose literally nothing by let these unmangled
 const classes = [];
 
-const config = (node, min) => ({
+const config = (node = false, min = false, esm = false) => ({
   external: ["@svgdotjs/svg.js"],
   input: "src/svg.resize.js",
   output: {
-    file: node
+    file: esm
+      ? "./dist/svg.resize.esm.js"
+      : node
       ? "./dist/svg.resize.node.js"
       : min
       ? "./dist/svg.resize.min.js"
       : "./dist/svg.resize.js",
-    format: node ? "cjs" : "iife",
-    name: "SVG.ResizeHandler",
+    format: esm ? "esm" : node ? "cjs" : "iife",
     sourcemap: true,
     banner: headerLong,
-    // remove Object.freeze
     freeze: false,
     globals: {
       "@svgdotjs/svg.js": "SVG",
