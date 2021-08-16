@@ -18,7 +18,7 @@
     }
   ],
   "homepage": "https://github.com/svgdotjs/svg.resize.js",
-  "main": "dist/svg.resize.node.js",
+  "main": "dist/svg.resize.js",
   "unpkg": "dist/svg.resize.min.js",
   "jsdelivr": "dist/svg.resize.min.js",
   "browser": "src/svg.resize.js",
