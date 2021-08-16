@@ -55,12 +55,7 @@ const config = (node, min) => ({
   external: ["@svgdotjs/svg.js"],
   input: "src/svg.resize.js",
   output: {
-    file: node
-      ? "./dist/svg.resize.node.js"
-      : min
-      ? "./dist/svg.resize.min.js"
-      : "./dist/svg.resize.js",
-    format: node ? "cjs" : "iife",
+    file: "./dist/svg.resize.js",
     name: "SVG.ResizeHandler",
     sourcemap: true,
     banner: headerLong,
