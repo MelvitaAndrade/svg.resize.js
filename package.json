@@ -33,7 +33,7 @@
     "build": "npm run fix && npm run rollup",
     "fix": "npx eslint ./src --fix",
     "lint": "npx eslint ./src",
-    "rollup": "npx rollup -c .config/rollup.config.js",
+    "rollup": "npx rollup src/svg.resize.js --file dist/svg.resize.js --format umd --name 'svg.resize'",
     "zip": "zip -j dist/svg.draggable.js.zip -- LICENSE README.md dist/svg.draggable.js dist/svg.draggable.js.map dist/svg.draggable.min.js dist/svg.draggable.min.js.map",
     "prepublishOnly": "rm -rf ./dist && npm run build",
     "postpublish": "npm run zip"
